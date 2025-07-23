@@ -9,18 +9,21 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-elegant",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-elegant transition-all duration-300",
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+          "border border-border glass hover:bg-accent/20 hover:text-accent-foreground transition-all duration-300",
         secondary:
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
+        ghost: "hover:bg-accent/20 hover:text-accent-foreground transition-all duration-300",
         link: "text-primary underline-offset-4 hover:underline",
-        electric: "bg-gradient-electric text-electric-foreground hover:shadow-electric hover:scale-105 transition-all duration-300 font-semibold",
-        hero: "bg-gradient-primary text-primary-foreground hover:shadow-electric hover:scale-105 transition-all duration-300 font-semibold border border-electric/20",
-        cta: "bg-electric text-electric-foreground hover:bg-electric/90 shadow-electric hover:shadow-electric hover:scale-105 transition-all duration-300 font-semibold",
+        electric: "bg-gradient-electric text-electric-foreground hover:shadow-glow hover:scale-105 transition-all duration-500 font-semibold glow-electric",
+        hero: "glass bg-gradient-primary/20 text-foreground hover:bg-gradient-primary/30 hover:shadow-electric hover:scale-105 transition-all duration-500 font-semibold border border-electric/30",
+        cta: "bg-electric text-electric-foreground hover:bg-electric/90 shadow-electric hover:shadow-glow hover:scale-105 transition-all duration-500 font-semibold animate-pulse-glow",
+        neon: "bg-gradient-neon text-neon-foreground hover:shadow-neon hover:scale-105 transition-all duration-500 font-semibold",
+        glass: "glass text-foreground hover:bg-white/10 hover:scale-105 transition-all duration-500 border border-white/20",
+        magnetic: "bg-primary text-primary-foreground hover:bg-primary/90 magnetic transition-all duration-300 hover:shadow-glow",
       },
       size: {
         default: "h-10 px-4 py-2",
